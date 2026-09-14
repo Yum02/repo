@@ -1,21 +1,23 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void Print()
+void Print(int x)
 {
-	printf("----------\n");
-	printf("----------\n");
+	int i;
+	for(i=0; i < x; i++) {
+		printf("-------------\n");
+	}
 }
 
 int main() {
 	int i;
 
-	Print();
+	Print(2);
 
 	for(i=0; i < 5; i++) {
 		printf("%dÀÇ Á¦°öÀº %d\n", i, i*i);
 	}
 
-	Print();
+	Print(4);
 	return 0;
 }
