@@ -1,0 +1,28 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int compute_sum(int, int);
+
+int main()
+{
+	int a, b, compute;
+	int Mn, Mx;
+	printf("정수의 범위를 입력 : ");
+	scanf("%d %d", &a, &b);
+	Mx = a > b ? a : b;
+	Mn = a < b ? a : b;
+
+	compute = compute_sum(Mn, Mx);
+	printf("값의 합은 %d\n", compute);
+	return 0;
+}
+
+int compute_sum(int x, int y)
+{
+	int result = 0;
+	for (int i = x; i <= y; i++)
+	{
+		result = result + i;
+	}
+	printf("%d부터 %d까지 합은 %d\n", x, y, result);
+	return result;
+}
