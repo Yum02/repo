@@ -65,3 +65,6 @@ Debug/
 Release/
 *.log
 *.tlog/
+
+# graphify output
+graphify-out/
